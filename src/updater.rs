@@ -82,10 +82,9 @@ fn start_auto_update_check() -> Sender<UpdateMsg> {
 }
 
 fn start_auto_update_check_(rx_msg: Receiver<UpdateMsg>) {
-    std::thread::sleep(Duration::from_secs(30));
-    if let Err(e) = check_update(false) {
-        log::error!("Error checking for updates: {}", e);
-    }
+    // 🎯 直接返回，完全禁用自动更新检查
+    log::info!("Auto update disabled by custom build");
+    return;
 
     const MIN_INTERVAL: Duration = Duration::from_secs(60 * 10);
     const RETRY_INTERVAL: Duration = Duration::from_secs(60 * 30);
