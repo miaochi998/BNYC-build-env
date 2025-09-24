@@ -100,8 +100,8 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["yc.bonnei.com"];
-pub const RS_PUB_KEY: &str = "fHo5fppIDabxJQ9A0TepDdBu3Z8qJJCTJAxHV7+U3LQ=";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["bdyc.bonnei.com"];
+pub const RS_PUB_KEY: &str = "DK1aLYNTq85LhXioKLZbaoY24wa/AemF93ldqy/zCqM=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
